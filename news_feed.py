@@ -7,6 +7,7 @@ import logging
 import ConfigParser
 import sched
 import time
+import os
 
 s = sched.scheduler(time.time, time.sleep)
 
@@ -83,9 +84,12 @@ def save_top_story(top_story):
 
 def read_last_top_story():
 	try:
-		file = open('top_story' , 'r')
-		last_top_story = file.readline()
-		file.close()
+		if os.path.exists('top_story'):
+			file = open('top_story' , 'r')
+			last_top_story = file.readline()
+			file.close()
+		else:
+			return ''
 	except IOError as e:
 		log_error("I/O error({0}): {1}".format(e.errno , e.strerror))
 	except:
