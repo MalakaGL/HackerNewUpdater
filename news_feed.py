@@ -120,7 +120,6 @@ def get_latest_top_stories():
 def main():
 	duration =  (int(get_config_data('Duration','days')) * 24 * 60 * 60) + (int(get_config_data('Duration','hours')) * 60 * 60) + (int(get_config_data('Duration','minutes')) * 60) + int(get_config_data('Duration','seconds'))
 	s.enter(10,1,main,())
-	print str(time.time())
 	
 	latest_top_stories = get_latest_top_stories()
 	last_top_story = read_last_top_story()
