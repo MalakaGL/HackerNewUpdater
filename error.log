@@ -1,0 +1,24 @@
+12/17/2014 11:10:08 AM ERROR Error
+12/17/2014 11:17:37 AM ERROR I/O error(2): No such file or directory
+12/17/2014 12:40:49 PM ERROR {'[glmalaka@gmail.com]': (555, '5.5.2 Syntax error. ws4sm2888513pbc.53 - gsmtp')}
+12/17/2014 12:45:57 PM ERROR {'[glmalaka@gmail.com]': (555, '5.5.2 Syntax error. zx6sm2956415pbc.19 - gsmtp')}
+12/17/2014 12:47:17 PM ERROR {'[glmalaka@gmail.com]': (555, '5.5.2 Syntax error. ri3sm2904668pdb.58 - gsmtp')}
+12/17/2014 12:51:23 PM ERROR {'[glmalaka@gmail.com, gunawardhanlahirumalaka@gmail.com]': (555, '5.5.2 Syntax error. wt4sm3003568pab.4 - gsmtp')}
+12/17/2014 03:04:52 PM ERROR I/O error(2): No such file or directory
+12/17/2014 03:06:10 PM ERROR I/O error(2): No such file or directory
+12/17/2014 03:10:13 PM ERROR I/O error(socket error): [Errno 8] Name or service not known
+12/17/2014 03:15:29 PM ERROR I/O error(socket error): [Errno 111] Connection refused
+12/18/2014 09:26:30 AM ERROR I/O error(None): None
+12/18/2014 09:42:03 AM ERROR Error occurred while parsing configuration file. File contains no section headers.
+file: conf, line: 1
+'Enter your credentials to log into gmail account here\r\n'
+12/18/2014 09:43:22 AM ERROR Error occurred while parsing configuration file. File contains parsing errors: conf
+	[line  2]: 'Enter your credentials to log into gmail account here\r\n'
+	[line  7]: 'Enter the list of email subscribers here.\r\n'
+	[line  8]: 'Each email should be seperated by a semicolon and no spaces.\r\n'
+	[line 12]: 'Enter the emails of admiistrators of the script here.\r\n'
+	[line 13]: 'Error messages will be sent to these email addresses on script failure\r\n'
+	[line 17]: 'All emails will be sent as from this email.\r\n'
+	[line 21]: 'Data will be taken from this site.\r\n'
+	[line 25]: 'Script will be run exactly with an interval given below.\r\n'
+	[line 26]: 'Time is measured in seconds.\r\n'
