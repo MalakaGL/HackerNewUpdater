@@ -26,6 +26,7 @@ fi
 hash=$(git rev-parse --short head)
 git pull origin master
 log=$(git log --pretty=format:"%H   %s" ORIG_HEAD..HEAD)
+echo $log
 script=$(git diff $hash news_feed.py);
 conf=$(git diff $hash conf_sample);
 
