@@ -28,9 +28,7 @@ In this distribution, you will find the following files:
 news_feed.py                    - The main Python script
 ReadMe.txt                      - This file. Instructions on how to install and use HackerNewsUpdater
 conf-sample                     - Configuration file for the script
-scheduler.sh					- Update the script according git repository and restart the script when it is updated in the repository.
-git_pull.sh						- Create pull requests to git repository
-check_script.sh					- Check whether the script is running.
+git_pull.sh						- Create pull requests to git repository and restart script.
 
 CONFIGURATION
 
