@@ -26,7 +26,6 @@ fi
 hash=$(git rev-parse --short head)
 git pull origin master
 log=$(git log --pretty=format:"%H   %s" ORIG_HEAD..HEAD)
-echo $log
 script=$(git diff $hash news_feed.py);
 conf=$(git diff $hash conf_sample);
 
@@ -39,7 +38,7 @@ fi
 if [ "$script" != "" ] ; then
 	echo "Ready to kill last process..."
 	kill -9 $(<"running_pid")
-	echo "Restarting script..."
+	echo "Restarting script. Running commit details: $log"
 	nohup python news_feed.py > /dev/null 2>&1 & echo $! > running_pid
 	echo "Checking script..."
 	./check_script.sh
