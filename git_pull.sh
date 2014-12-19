@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 echo "git pull started..."
 
 if [[ ! -z  $(git status --short | grep '^?') ]] ; then
