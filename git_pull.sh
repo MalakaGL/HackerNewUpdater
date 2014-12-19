@@ -1,20 +1,20 @@
-#!/bin/bash
+!/bin/bash
 echo "git pull started..."
 
-#if [[ ! -z  $(git status --short | grep '^?') ]] ; then
-#	echo "Untracked files are available"
-#	exit 1
-#fi
+if [[ ! -z  $(git status --short | grep '^?') ]] ; then
+	echo "Untracked files are available"
+	exit 1
+fi
 
-#if [[ ! -z  $(git status --short | grep '^ ') ]] ; then
-#	echo "Changes are available which are not added."
-#	exit 1
-#fi
+if [[ ! -z  $(git status --short | grep '^ ') ]] ; then
+	echo "Changes are available which are not added."
+	exit 1
+fi
 
-#if [[ ! -z  $(git status --short | grep '^M') ]] ; then
-#	echo "Uncommitted changes are available which are added."
-#	exit 1
-#fi
+if [[ ! -z  $(git status --short | grep '^M') ]] ; then
+	echo "Uncommitted changes are available which are added."
+	exit 1
+fi
 
 branch=$(git branch | grep '*' | sed -e 's/^\* \(.*\)$/\1/')
 
