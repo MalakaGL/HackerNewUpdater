@@ -1,6 +1,5 @@
 #!/usr/bin/env python
-import urllib , json , smtplib , sys , logging , ConfigParser , sched
-import time
+import urllib , json , smtplib , sys , logging , ConfigParser , sched , time
 import os
 
 s = sched.scheduler(time.time, time.sleep)
