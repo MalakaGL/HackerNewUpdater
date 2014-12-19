@@ -1,6 +1,5 @@
 #!/usr/bin/env python
-import urllib , json , smtplib , sys , logging
-import ConfigParser
+import urllib , json , smtplib , sys , logging , ConfigParser
 import sched
 import time
 import os
