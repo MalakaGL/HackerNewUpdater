@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 count=0
 echo "Cheking started..."
 while [  $count -lt 3 ];
