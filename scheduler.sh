@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 nohup python news_feed.py > /dev/null 2>&1 & echo $! > running_pid
 while true;
 do
