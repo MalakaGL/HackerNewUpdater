@@ -1,6 +1,5 @@
 #!/usr/bin/env python
-import urllib
-import json
+import urllib , json
 import smtplib
 import sys
 import logging
