@@ -1,4 +1,3 @@
-
 COPYRIGHT
 
 HackerNewsFeed Version 1.0
@@ -29,6 +28,9 @@ In this distribution, you will find the following files:
 news_feed.py                    - The main Python script
 ReadMe.txt                      - This file. Instructions on how to install and use HackerNewsUpdater
 conf-sample                     - Configuration file for the script
+scheduler.sh					- Update the script according git repository and restart the script when it is updated in the repository.
+git_pull.sh						- Create pull requests to git repository
+check_script.sh					- Check whether the script is running.
 
 CONFIGURATION
 
@@ -63,7 +65,7 @@ INSTALLATION
 
 Configure the "conf-sample"" file as you wish.
 Save it as "conf" in the same directory where the "news_feed.py" is.
-Run the "news_feed.py" using the command "python news_feed.py"
+Run the "scheduler.sh" using the command "./sheduler.sh"
 
 COMMON PROBLEMS
 
