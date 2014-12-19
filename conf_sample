@@ -1,0 +1,31 @@
+# Enter your credentials to log into gmail account here
+[Credentials]
+username: username@gmail.com
+password: password
+
+# Enter the list of email subscribers here.
+# Each email should be seperated by a semicolon and no spaces.
+[Subscribers]
+emails: user1@domain_name;user2@domain_name
+
+# Enter the emails of admiistrators of the script here.
+# Error messages will be sent to these email addresses on script failure
+[Administrator]
+emails: admin1@domain_name;admin2@domain_name;
+
+# All emails will be sent as from this email.
+[Sender]
+email: email_sender_name@domain_name;
+
+# Data will be taken from this site.
+# Do not change this if you do not know what you are doing.
+[Site]
+url: https://news.ycombinator.com
+
+# Script will be run exactly with an interval given below.
+# Time is measured in seconds.
+[Duration]
+days: 0
+hours: 0
+minutes: 0
+seconds: 10
