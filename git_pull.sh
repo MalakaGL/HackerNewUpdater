@@ -41,6 +41,7 @@ kill -9 $(<"running_pid")
 echo "Running commit: $log" >> log_file
 nohup python news_feed.py > /dev/null 2>&1 & echo $! > running_pid
 echo "Cheking started..."
+count=0
 while [$count -lt 3];
 do
 	pid=$(<"running_pid")
